@@ -23,7 +23,7 @@ public class RelativizePath {
         System.out.println("2: " + absolute3.relativize(absolute1));
         System.out.println("3: " + absolute1.relativize(absolute2));
         System.out.println("4: " + relative1.relativize(relative2));
-        System.out.println("5: " + absolute1.relativize(relative1));    // BAD - can't make a relative path out of 1 absolute and one relative path
+//        System.out.println("5: " + absolute1.relativize(relative1));    // BAD - can't make a relative path out of 1 absolute and one relative path
 
 //        1: temp/music.mp3
 //        2: ../..
