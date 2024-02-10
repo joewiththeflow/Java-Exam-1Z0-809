@@ -32,6 +32,7 @@ public class DirectoryStreamExample {
             // joe
         } catch (IOException e) {}
 
+        // Directory Stream can only look at one directory, not subdirectories
 
     }
 }
