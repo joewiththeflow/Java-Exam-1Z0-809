@@ -9,12 +9,13 @@ public class FileWriteReadExample1 {
         try {
             File file = new File("fileWrite2.txt");   // just an object
             FileWriter fw = new FileWriter(file);               // create an actual file and FileWriter object
+                                                                // IF FILE EXISTS IT WILL CREATE NEW BLANK FILE !!!!!
             fw.write("howdy\nfolks\n");                      // write characters to the file
             fw.flush();                                         // flush before closing
             fw.close();
 
             FileReader fr = new FileReader(file);               // create a FileReader object
-            size = fr.read(in);                                 // read whole file!
+            size = fr.read(in);                                 // read whole file! - also returns int size of file !!!
             System.out.print("size: " + size + " ");
             for(char c : in)
                 System.out.print(c);

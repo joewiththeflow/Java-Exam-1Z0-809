@@ -14,7 +14,7 @@ public class FileInputStreamFileOutputStreamExample1 {
         FileInputStream fis = null;
         File file = new File("fileWrite3.txt");
         try {
-            fos = new FileOutputStream(file);
+            fos = new FileOutputStream(file);               // IF FILE EXISTS IT WILL CREATE NEW BLANK FILE !!!!!
             String s = "howdy\nfolks\n";
             fos.write(s.getBytes(StandardCharsets.UTF_8));
             fos.flush();

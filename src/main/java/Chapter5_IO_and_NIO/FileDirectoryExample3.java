@@ -22,7 +22,9 @@ public class FileDirectoryExample3 {
             File newName = new File(delDir, "newName.txt");     // new File object
             delFile2.renameTo(newName);                               // rename File
 
-            File newDir = new File("newDir");               // rename directory
+            File newDir = new File("newDir2");               // rename directory
+                                                            // WILL ONLY WORK IF DIR DOESNT ALREADY EXIST !!!!
+                                                            // ORIGINAL delDir disappears as it has been renamed
             System.out.println(delDir.renameTo(newDir));
 
             // First run - end up with newDir/newName.txt
