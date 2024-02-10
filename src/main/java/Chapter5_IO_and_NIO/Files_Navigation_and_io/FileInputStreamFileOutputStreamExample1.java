@@ -1,4 +1,4 @@
-package Chapter5_IO_and_NIO;
+package Chapter5_IO_and_NIO.Files_Navigation_and_io;
 
 import java.io.File;
 import java.io.FileInputStream;

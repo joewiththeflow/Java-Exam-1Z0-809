@@ -1,4 +1,4 @@
-package Chapter5_IO_and_NIO;
+package Chapter5_IO_and_NIO.Files_Path_and_Paths;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -32,7 +32,7 @@ public class RelativizePath {
 //        Exception in thread "main" java.lang.IllegalArgumentException: 'other' is different type of Path
 //        at sun.nio.fs.UnixPath.relativize(UnixPath.java:416)
 //        at sun.nio.fs.UnixPath.relativize(UnixPath.java:43)
-//        at Chapter5_IO_and_NIO.RelativizePath.main(RelativizePath.java:26)
+//        at Chapter5_IO_and_NIO.Files_Path_and_Paths.RelativizePath.main(RelativizePath.java:26)
 
         // relativize and resolve are opposites
         // relativize also doesn't check if the path exists

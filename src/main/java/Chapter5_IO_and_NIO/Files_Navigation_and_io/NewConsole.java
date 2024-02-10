@@ -1,4 +1,4 @@
-package Chapter5_IO_and_NIO;
+package Chapter5_IO_and_NIO.Files_Navigation_and_io;
 import java.io.Console;
 
 // This doesn't actually work for some reason, the console is null. Could probably use System.in instead

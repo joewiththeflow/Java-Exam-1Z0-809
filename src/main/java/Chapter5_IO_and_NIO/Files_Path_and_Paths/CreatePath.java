@@ -1,4 +1,4 @@
-package Chapter5_IO_and_NIO;
+package Chapter5_IO_and_NIO.Files_Path_and_Paths;
 
 import java.io.File;
 import java.net.URI;
