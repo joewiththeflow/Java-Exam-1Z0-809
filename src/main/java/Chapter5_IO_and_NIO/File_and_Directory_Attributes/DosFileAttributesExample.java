@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.attribute.DosFileAttributeView;
 import java.nio.file.attribute.DosFileAttributes;
 
 public class DosFileAttributesExample {
@@ -32,6 +33,12 @@ public class DosFileAttributesExample {
 //            System.out.println(dos.isReadOnly());
 //
 //            Files.delete(path)
+
+
+//        There is another way to set the attributes:
+//        DosFileAttributeView view = Files.getFileAttributeView(path, DosFileAttributeView.class);
+//        view.setHidden(true);
+//        view.setReadOnly(true);
 //
 //        }
 //        catch (IOException e) {}
