@@ -1,11 +1,12 @@
 package Chapter5_IO_and_NIO.Directory_Stream;
 
+import java.io.IOException;
 import java.nio.file.*;
 
 import static java.nio.file.StandardWatchEventKinds.ENTRY_DELETE;       // need these static imports
 
-// You need to first have a directory in watchDir called delDir before running this program
 // Run the program
+// You may have to Right click the project and 'Reload from Disk' to get the watchDir to appear
 // Manually delete delDir
 // It may take a few seconds as WatchService is not 100% reliable and it is slow - unlikely to use on the job
 // Produces:
@@ -18,6 +19,11 @@ public class WatchServiceExample {
     public static void main(String[] args) {
 
         Path dir = Paths.get("watchDir");   // parent directory to watch
+
+        // create directory structure in case it doesn't already exist:
+        try {
+            Files.createDirectories(Paths.get("watchDir/delDir"));
+        }   catch (IOException e) {}
 
         try {
             WatchService watcher = FileSystems.getDefault().newWatchService();      // create empty WaatchService
@@ -41,11 +47,6 @@ public class WatchServiceExample {
 
                     if (name.equals("delDir")) {
                         System.out.println("Directory delDir deleted, now we can proceed");
-                        System.out.println("just going to recreate the dir again for next run of program...");
-
-                        Path delDir = Paths.get("watchDir/delDir");
-                        Files.createDirectory(delDir);          // recreate delDir for running program next time
-                        System.out.println("delDir recreated");
 
                         return;     // end program
                     }
