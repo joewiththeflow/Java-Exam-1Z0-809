@@ -29,7 +29,7 @@ public class Question10 {
 //      BasicFileAttributes attr = dir.getBasicFileAttributes();
 
         // CODE HERE
-        System.out.println(attr.creationTime());
+//        System.out.println(attr.creationTime());
 
     }
 }
