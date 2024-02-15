@@ -31,7 +31,13 @@ public class Question15 {
 //    B. c:/x/a.txt
 //       c:/x/a/b.txt
 //       c:/x/y/z/c.txt
-//    C. Code compiles but does not output anything
+//    C. Code compiles but does not output anything     ---> CORRECT because DirectoryStream only looks for files in the
+//                                                        // immediate directory. **/*.txt means zero or more directories
+//                                                        followed by a /, followed by zero or more charcteres followed by .txt.
+//                                                        Since the slash is there, it is required to match, which makes
+//                                                        it mean one or more directories. However, this is impossible as
+//                                                        DirectoryStream only looks at one directory. If the expression
+//                                                        were simply *.txt, A would be correct
 //    D. Does not compile because DirectoryStream comes from FileSystems, not Files
-//    E. Does not compile for another reason        ---> Correct - Exception is not handled
+//    E. Does not compile for another reason
 }

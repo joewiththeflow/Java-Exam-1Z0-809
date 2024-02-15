@@ -14,9 +14,9 @@ public static void main(String[] args) {
 
     try {
 //    A.
-        Files.delete(Paths.get("c:/temp/test.txt"));            //---> CORRECT
+        Files.delete(Paths.get("c:/temp/test.txt"));            //---> Need a try catch for this, pre Java 7 method returns false
 //    B.
-        Files.deleteIfExists(Paths.get("c:/temp/test.txt"));    //---> CORRECT
+        Files.deleteIfExists(Paths.get("c:/temp/test.txt"));    //---> CORRECT - returns false if it doesn't exist, just like pre Java 7 method
 //    C.
 //      Files.deleteOnExit(Paths.get("c:/temp/test.txt"));       // method doesn't exist
 //    D.

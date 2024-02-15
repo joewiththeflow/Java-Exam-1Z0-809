@@ -19,7 +19,7 @@ public class Question4 {
 
 // A. username:
 //        password:
-// B: username: fred
+// B: username: fred        ---> If it was char[], not a String, this would be correct
 //      password:
 // C: username: fred
 //      password: 1234

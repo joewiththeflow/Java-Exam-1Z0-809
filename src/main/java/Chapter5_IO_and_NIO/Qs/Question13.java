@@ -23,8 +23,8 @@ public class Question13 extends SimpleFileVisitor<Path> {
 // Which code inserted at // CODE HERE would cause the FileVisitor to stop visiting files after it sees the file Test.java?
 
 // A. return FileVisitResult.CONTINUE;
-// A. return FileVisitResult.END;
-// A. return FileVisitResult.SKIP_SIBLINGS;
-// A. return FileVisitResult.SKIP_SUBTREE;
-// A. return FileVisitResult.TERMINATE;     --> CORRECT
-// A. return null;                          --> Possibly
+// B. return FileVisitResult.END;
+// C. return FileVisitResult.SKIP_SIBLINGS;
+// D. return FileVisitResult.SKIP_SUBTREE;
+// E. return FileVisitResult.TERMINATE;     --> CORRECT
+// F. return null;                          --> Not correct as the file visiotr throws a NullPointerException if null returned

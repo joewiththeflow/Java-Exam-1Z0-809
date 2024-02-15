@@ -27,7 +27,7 @@ public class Question3 {
 
 // A. ab
 // B. abcd
-// C. ab
+// C. ab                        ---> Would be this if no flush() method present
 //    cd
 // D. a
 //    b
