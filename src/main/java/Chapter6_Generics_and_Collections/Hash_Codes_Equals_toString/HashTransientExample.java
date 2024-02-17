@@ -1,7 +1,7 @@
 package Chapter6_Generics_and_Collections.Hash_Codes_Equals_toString;
 
 import java.io.*;
-import java.sql.SQLOutput;
+
 // The lesson here is that you should never use transient values as part of an equals or hashcode method as transient
 // variables will revert to their default values when object is deserialized.
 // This could mean that an object which should be regarded as equal will not be recognised to be so, which could lead to
