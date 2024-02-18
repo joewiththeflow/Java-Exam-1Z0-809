@@ -1,4 +1,4 @@
-package Chapter6_Generics_and_Collections;
+package Chapter6_Generics_and_Collections.Using_Collections;
 
 public class UseBoxing {
     public static void main(String[] args) {
