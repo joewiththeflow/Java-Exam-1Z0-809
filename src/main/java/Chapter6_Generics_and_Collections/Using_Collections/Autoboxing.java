@@ -1,16 +1,17 @@
-package Chapter6_Generics_and_Collections;
+package Chapter6_Generics_and_Collections.Using_Collections;
 
 public class Autoboxing {
     public static void main(String[] args) {
-        Integer y = new Integer(567);
-        int x = y.intValue();
-        x++;
-        y = new Integer(x);
+        // Pre Java 5, you have to wrap, unwrap, use, rewrap etc.
+        Integer y = new Integer(567);   // make
+        int x = y.intValue();                 // unwrap
+        x++;                                  // use
+        y = new Integer(x);                   // rewrap
         System.out.println(x);
 
         // As of Java 5, you can say:
-        Integer a = new Integer(567);
-        a++;
+        Integer a = new Integer(567);   // make
+        a++;                                  // unwrap, use, rewrap
         System.out.println(a);
     }
 }
