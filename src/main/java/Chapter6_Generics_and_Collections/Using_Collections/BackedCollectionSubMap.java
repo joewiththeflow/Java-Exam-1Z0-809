@@ -22,5 +22,13 @@ public class BackedCollectionSubMap {
         // submap.put("p", "pig");                  // add to copy - out of range
 
         System.out.println(map + " " + submap);     // show final contents
+
+        // EXAM
+        // If you've created a backed collection using tailXXX() or subXXX(), usually the original and copy collections
+        // have different "first" elements
+        // pollFirstXXX() methods will always remove the first entry from the collection on which they're invoked,
+        // but they will remove an element from the other collection only if it has the same value
+        // So it's most likely that invoking pollFirstXXX on the copy will rmove an entry from both collections
+        // but invoking pollFirstXXX on the original will remove only the entry from the original
     }
 }
