@@ -3,7 +3,7 @@ package Chapter6_Generics_and_Collections.Using_Collections;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public class BackedCollection {
+public class BackedCollectionSubMap {
     public static void main(String[] args) {
         TreeMap<String, String> map = new TreeMap<>();
         map.put("a", "ant");
