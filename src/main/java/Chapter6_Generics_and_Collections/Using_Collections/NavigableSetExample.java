@@ -57,6 +57,15 @@ public class NavigableSetExample {
         // pollLastEntry()
         // descendingMap()
 
+        // Important to know the following methods for TreeSet and TreeMap
+        // headSet(e, b*) and headMap(k, b*)    - e/k is exclusive
+        // tailSet(e, b*) and tailMap(k, b*)    - e/k is inclusive
+        // subSet(e, b*, e, b*) and tailMap(k, b*, e, b*)   - start and end points
+
+        // * the booleans are optional> If they exist then it's a Java 6 method, letting you specify if the start and/or
+        // end points are exclusive, and these methods return a NavigableSet or NavigableMap. If they don't exist, the method
+        // returns a SortedSet or SortedMap
+
 
     }
 }
