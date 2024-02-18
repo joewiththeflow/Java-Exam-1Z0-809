@@ -33,6 +33,9 @@ public class NavigableSetExample {
         // ceiling() gives the first element that is equal or higher
         System.out.println("J6 - the first after or equal to 2010 is: " + times.ceiling(2010));
 
+        // Out of curiosity, if there is no matching value, you get null back
+        System.out.println("J6 - the last before 12.05pm is: " + times.lower(1205));    // null
+
         // There are similar methods for NavigableMap:
         // lowerKey()
         // higherKey()
