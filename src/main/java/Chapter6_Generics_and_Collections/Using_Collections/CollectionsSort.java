@@ -1,9 +1,9 @@
-package Chapter6_Generics_and_Collections;
+package Chapter6_Generics_and_Collections.Using_Collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class TestSort1 {
+public class CollectionsSort {
     public static void main(String[] args) {
         ArrayList<String> stuff = new ArrayList<String>();
         stuff.add("Denver");
