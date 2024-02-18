@@ -51,9 +51,9 @@ public class ArrayDequeExample {
 
 
         // Accessing an empty Deque
-//        System.out.println("Try to pop one more item: " + e.pop());       // NoSuhElementException
+//        System.out.println("Try to pop one more item: " + e.pop());       // NoSuchElementException
 
-//        System.out.println("Try to remove one more item: " + e.remove()); // NoSuhElementException
+//        System.out.println("Try to remove one more item: " + e.remove()); // NoSuchElementException
 
         System.out.println("Try to poll one more item: " + e.poll());   // null
     }
