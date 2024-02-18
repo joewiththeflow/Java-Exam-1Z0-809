@@ -32,10 +32,24 @@ public class HomeEntertainmentCentre2 {
         GenreSort gs = new GenreSort();     // class implements Comparator
         Collections.sort(dvdList, gs);
 
+        System.out.println("---Genre sorted by class implementing Comparator");
         System.out.println(dvdList);        // print out ArrayList
         for (DVDInfo item : dvdList){
             System.out.println(item);       // alternatively, print out each DVDInfo item
         }
+
+        // Use a lambda expression to sort genre instead
+        // Comparator is a functional interface (has one method) so we can replace a class that implements Comparator
+        // with a lambda expression instead
+        Collections.sort(dvdList, (one, two) -> one.getGenre().compareTo(two.getGenre()));
+        System.out.println("---Genre sorted by lambda Comparator");
+
+        System.out.println(dvdList);        // print out ArrayList
+        for (DVDInfo item : dvdList){
+            System.out.println(item);       // alternatively, print out each DVDInfo item
+        }
+
+
     }
 
     private static void populateList() {    // again as it is static variable, we don't need to pass dvdList in
