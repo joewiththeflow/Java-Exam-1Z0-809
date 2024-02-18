@@ -12,6 +12,8 @@ public class NavigableSetExample {
         times.add(2010);
         times.add(2100);
 
+        System.out.println("times: " + times);
+
         // Java 5 version
 
         TreeSet<Integer> subset = new TreeSet<>();
@@ -36,10 +38,25 @@ public class NavigableSetExample {
         // Out of curiosity, if there is no matching value, you get null back
         System.out.println("J6 - the last before 12.05pm is: " + times.lower(1205));    // null
 
+        // pollFirst () and pollLast() methods
+        System.out.println("Poll first entry: " + times.pollFirst());   // removes and returns Integer 1205
+        System.out.println("times: " + times);
+        System.out.println("Poll last entry: " + times.pollLast());     // removes and returns Integer 2100
+        System.out.println("times: " + times);
+
+        // descendingSet() to return a reversed Set - doesn't reverse in place
+        System.out.println("reversed times" + times.descendingSet());
+        System.out.println("times: " + times);
+
         // There are similar methods for NavigableMap:
         // lowerKey()
         // higherKey()
         // floorKey()
         // ceilingKey
+        // pollFirstEntry()
+        // pollLastEntry()
+        // descendingMap()
+
+
     }
 }
