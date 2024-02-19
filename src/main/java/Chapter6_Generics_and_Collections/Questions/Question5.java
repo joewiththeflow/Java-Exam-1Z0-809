@@ -38,7 +38,7 @@ public class Question5 {
             // return total;
 // F. Replace lines 11-14 with                                  --> That could return null
         // return accountTotals.get(accountName);
-// G. Replace line 17 with
+// G. Replace line 17 with                                      --> CORRECT - should box it?
         // accountTotals.put(accountName, amount);
-// H. Replace line 17 with                                      --> CORRECT
+// H. Replace line 17 with                                      --> This one is treating amount as an Integer
         // accountTotals.put(accountName, amount.intValue());
