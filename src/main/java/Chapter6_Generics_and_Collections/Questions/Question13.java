@@ -20,10 +20,10 @@ public class Question13 {
 // Which are true? (Choose all that apply)
 
 // A. The size of s is 4
-// A. The size of s is 5        --> CORRECT
-// A. The size of s is 7
-// A. The size of subs is 1
-// A. The size of subs is 2
-// A. The size of subs is 3     --> CORRECT
-// A. The size of subs is 4
-// A. An exception is thrown at runtime
+// B. The size of s is 5        --> CORRECT
+// C. The size of s is 7
+// D. The size of subs is 1
+// E. The size of subs is 2
+// F. The size of subs is 3     --> CORRECT
+// G. The size of subs is 4
+// H. An exception is thrown at runtime

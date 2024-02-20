@@ -29,8 +29,8 @@ class Turtle {
 // If fragment I or II is inserted independently at line 21, which are true? (Choose all that apply)
 
 // A. If fragment I is inserted, the output is 2        --> CORRECT
-// A. If fragment I is inserted, the output is 3
-// A. If fragment II is inserted, the output is 2
-// A. If fragment II is inserted, the output is 3       --> CORRECT
-// A. If fragment I is inserted, compilation fails
-// A. If fragment II is inserted, compilation fails
+// B. If fragment I is inserted, the output is 3
+// C. If fragment II is inserted, the output is 2
+// D. If fragment II is inserted, the output is 3       --> CORRECT
+// E. If fragment I is inserted, compilation fails
+// F. If fragment II is inserted, compilation fails
