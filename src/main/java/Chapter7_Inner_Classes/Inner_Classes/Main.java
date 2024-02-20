@@ -1,4 +1,6 @@
-package Chapter7_Inner_Classes;
+package Chapter7_Inner_Classes.Inner_Classes;
+
+import Chapter7_Inner_Classes.Inner_Classes.MyOuter;
 
 public class Main {
     public static void main(String[] args) {
