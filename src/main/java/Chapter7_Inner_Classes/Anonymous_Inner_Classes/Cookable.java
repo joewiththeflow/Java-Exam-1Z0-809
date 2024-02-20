@@ -1,4 +1,4 @@
-package Chapter7_Inner_Classes;
+package Chapter7_Inner_Classes.Anonymous_Inner_Classes;
 
 public interface Cookable {
     public void cook();
