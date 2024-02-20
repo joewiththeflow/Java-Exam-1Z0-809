@@ -1,10 +1,10 @@
-package Chapter7_Inner_Classes;
+package Chapter7_Inner_Classes.Method_Local_Inner_Classes;
 
 public class MyOuter2 {
     private String x = "Outer2";
 
     void doStuff() {
-        final String z = "local variable";
+        final String z = "local variable";      // Optional but good practice as we aren't allowed to modify
         class MyInner {
             public void seeOuter() {
                 System.out.println("Outer x is " + x);
