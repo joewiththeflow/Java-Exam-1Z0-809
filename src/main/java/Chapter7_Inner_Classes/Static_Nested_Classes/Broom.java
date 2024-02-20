@@ -1,4 +1,4 @@
-package Chapter7_Inner_Classes;
+package Chapter7_Inner_Classes.Static_Nested_Classes;
 
 public class Broom {
     static class B2 {
