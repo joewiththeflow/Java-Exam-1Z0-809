@@ -8,6 +8,7 @@ public class Question7 {
 //        c.Sanctum s = Cathedral.new Sanctum();
         Cathedral.Sanctum s = c.new Sanctum();
 //        Cathedral.Sanctum s = Cathedral.new Sanctum();
+        s.go();
     }
 }
 
@@ -18,3 +19,11 @@ class Cathedral {
         }
     }
 }
+
+// Which, inserted independently at line 6, compiles and produces the output "Spooky"? (Choose all that apply)
+
+// A. Sanctum s = c.new Sanctum();
+// B. c.Sanctum s = c.new Sanctum();
+// C. c.Sanctum s = Cathedral.new Sanctum();
+// D. Cathedral.Sanctum s = c.new Sanctum();            --> CORRECT
+// E. Cathedral.Sanctum s = Cathedral.new Sanctum();

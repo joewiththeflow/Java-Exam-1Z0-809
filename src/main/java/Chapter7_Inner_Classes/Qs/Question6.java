@@ -26,3 +26,11 @@ public abstract class Question6 {
         System.out.println(f.getNum() + " " + t.getNum());
     }
 }
+
+// What is the result?
+
+// A. 57 22                             --> CORRECT
+// B. 45 38
+// C. 45 57
+// D. An exception occurs at runtime
+// E. Compilation fails

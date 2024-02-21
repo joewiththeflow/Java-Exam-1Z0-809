@@ -11,3 +11,16 @@ public class Question13 {
         for (String s2 : sa) System.out.print(s2 + " ");
     }
 }
+
+// What is the result?
+
+// A. Compilation fails
+// B. button key lint nickel
+//      nickel lint key button
+// C. nickel button key lint                --> CORRECT
+//      button key lint nickel
+// D. nickel button key lint
+//      nickel button key lint
+// E. nickel button key lint
+//      nickel lint key button
+// F. An exception is thrown at runtime

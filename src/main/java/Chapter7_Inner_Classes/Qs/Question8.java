@@ -22,3 +22,11 @@ public class Question8 {
         System.out.println("middle");           // The output is middle
     }}
 }
+
+// What is the result?
+
+// A. inner
+// B. outer
+// C. middle    --> CORRECT
+// D. Compilation fails
+// E. An exception is thrown at runtime

@@ -18,3 +18,16 @@ public class Question12 {
         }
     }
 }
+
+// What is the result?
+
+// A. Compilation fails             --> CORRECT, you cannot create a new inner class from a static context!!!
+// B. button key lint nickel
+//        nickel lint key button
+// C. nickel button key lint
+//        button key lint nickel
+// D. nickel button key lint
+//        nickel button key lint
+// E. nickel button key lint        --> Would have been if Sorter class was static
+//        nickel lint key button
+// F. An exception is thrown at runtime

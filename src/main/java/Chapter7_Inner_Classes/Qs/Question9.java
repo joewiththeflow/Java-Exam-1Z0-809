@@ -7,8 +7,8 @@ public class Question9 {
 //        { Question9.this.drive(); }
 //        { this.Question9.this.drive(); }
 //        Engine() { Question9.drive();}
-//        Engine() {Question9.drive();}
-        Engine() {Question9.this.drive();}
+//        Engine() {this.drive();}
+//        Engine() {Question9.this.drive();}
     }
 
     public static void main(String[] args) {
@@ -23,3 +23,13 @@ public class Question9 {
         System.out.println("hi");
     }
 }
+
+// Which, inserted independently at line 5, produces the output "hi"? (Choose all that apply)
+
+// A.       { Question9.drive(); }
+// B.       { this.drive(); }
+// C.       { Question9.this.drive(); }             --> CORRECT
+// D.       { this.Question9.this.drive(); }
+// E.       Engine() { Question9.drive();}
+// F.       Engine() {this.drive();}
+// G.       Engine() {Question9.this.drive();}      --> CORRECT - you're just accessing from with an Engine constructor
