@@ -4,7 +4,7 @@ public class DVDInfo implements Comparable<DVDInfo> {       // needed for sortin
     private String title;
     private String genre;
     private String leadActor;
-    DVDInfo (String t, String g, String a) {
+    public DVDInfo (String t, String g, String a) {
         title = t; genre = g; leadActor = a;
     }
 
