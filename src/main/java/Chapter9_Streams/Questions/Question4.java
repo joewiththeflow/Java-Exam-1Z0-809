@@ -1,6 +1,5 @@
 package Chapter9_Streams.Questions;
 
-import Chapter9_Streams.Searching_and_Sorting.Duck;
 
 import java.util.Arrays;
 import java.util.List;
