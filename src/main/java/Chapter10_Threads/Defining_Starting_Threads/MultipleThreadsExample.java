@@ -1,6 +1,6 @@
 package Chapter10_Threads.Defining_Starting_Threads;
 
-public class MutlipleThreadsExample {
+public class MultipleThreadsExample {
     public static void main(String[] args) {
         NameRunnable nr = new NameRunnable();
         Thread t = new Thread(nr);
