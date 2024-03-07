@@ -1,0 +1,63 @@
+package Chapter10_Threads.Synchronizing_Code;
+
+public class BankAccountExample2 implements Runnable {
+    private Account2 acct = new Account2();
+    public static void main(String[] args) {
+        BankAccountExample2 r = new BankAccountExample2();
+        Thread one = new Thread(r);
+        Thread two = new Thread(r);
+        one.setName("Fred");
+        two.setName("Lucy");
+        one.start();
+        two.start();
+    }
+    public void run() {
+        for(int x = 0; x < 5; x++) {
+            makeWithdrawal(10);
+            if (acct.getBalance() < 0) {
+                System.out.println("account is overdrawn!");
+            }
+        }
+    }
+    private synchronized void makeWithdrawal(int amt) {             // --> Just added synchronized
+        if (acct.getBalance() >= amt) {
+            System.out.println(Thread.currentThread().getName() + " is going to withdraw");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {}
+            acct.withdraw(amt);
+            System.out.println(Thread.currentThread().getName() + " completes the withdrawal");
+        } else {
+            System.out.println("Not enough in account for " + Thread.currentThread().getName() + " to withdraw "
+            + acct.getBalance());
+        }
+    }
+}
+
+class Account2 {
+    private int balance = 50;
+    public int getBalance(){
+        return balance;
+    }
+    public void withdraw(int amount) {
+        balance = balance - amount;
+    }
+}
+
+// Produced for me:
+
+//Fred is going to withdraw
+//Fred completes the withdrawal
+//Fred is going to withdraw
+//Fred completes the withdrawal
+//Fred is going to withdraw
+//Fred completes the withdrawal
+//Fred is going to withdraw
+//Fred completes the withdrawal
+//Fred is going to withdraw
+//Fred completes the withdrawal
+//Not enough in account for Lucy to withdraw 0
+//Not enough in account for Lucy to withdraw 0
+//Not enough in account for Lucy to withdraw 0
+//Not enough in account for Lucy to withdraw 0
+//Not enough in account for Lucy to withdraw 0
