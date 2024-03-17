@@ -25,7 +25,7 @@ public class ReadWriteLockExample {
     public int findMax() {
         rw1.readLock().lock();  // many at once
         try {
-            return Collections.max();
+            return Collections.max(integers);
         } finally {
             rw1.readLock().unlock();
         }
