@@ -13,7 +13,7 @@ package Chapter2_Object_Orientation.Questions;
 //    }
 //    void go() {
 //        System.out.println(doStuff());
-    }
+//    }
 //    int doStuff() {                   --> MUST be declared "public"
 //        return 3;
 //    }

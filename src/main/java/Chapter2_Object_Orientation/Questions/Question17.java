@@ -7,20 +7,20 @@ class Patton {
         System.out.println("stuff ");
     }
 }
-public class Question17 extends Patton implements i1 {
-    public static void main(String[] args) {
-        new Question17().doStuff(1);
-        new Question17().stuff("x");
-    }
-//    @Override
-//    void doStuff(int x) {                 // You have to make this "public"
-//        System.out.println("doStuff ");
+//public class Question17 extends Patton implements i1 {
+//    public static void main(String[] args) {
+//        new Question17().doStuff(1);
+//        new Question17().stuff("x");
 //    }
-    @Override
-    void stuff(String s) {
-        System.out.println("my stuff ");
-    }
-}
+////    @Override
+////    void doStuff(int x) {                 // You have to make this "public"
+////        System.out.println("doStuff ");
+////    }
+//    @Override
+//    void stuff(String s) {
+//        System.out.println("my stuff ");
+//    }
+//}
 
 // What is the result? (Choose all tha apply)
 
