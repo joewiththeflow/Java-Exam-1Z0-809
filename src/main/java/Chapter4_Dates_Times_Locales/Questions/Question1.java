@@ -5,8 +5,9 @@ import java.time.ZonedDateTime;
 public class Question1 {
     public static void main(String[] args) {
         // Given the code fragment
-        ZonedDateTime zd = ZonedDateTime.parse("2020-05-04T08:05:00");
-        System.out.println(zd.getMonth() + " " + zd.getDayOfMonth());
+
+//        ZonedDateTime zd = ZonedDateTime.parse("2020-05-04T08:05:00");
+//        System.out.println(zd.getMonth() + " " + zd.getDayOfMonth());
     }
 
 //    A. MAY 4
